@@ -1,4 +1,4 @@
-package rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.activities;
+package rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 

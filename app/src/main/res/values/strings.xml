@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">RAF_WALLET</string>
+    <string name="novcanik_sistem_za_studente_raf_a">Novcanik sistem za studente RAF-a</string>
+    <string name="unesite_ime">Unesite ime</string>
+    <string name="unesite_prezime">Unesite prezime</string>
+    <string name="unesite_ime_banke">Unesite ime banke</string>
+    <string name="unesite_sifru">Unesite sifru</string>
+    <string name="prijava">Prijava</string>
 </resources>
