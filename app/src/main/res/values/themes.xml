@@ -19,4 +19,9 @@
         <item name="android:windowBackground">@drawable/background</item>
     </style>
 
+    <style name="FragmentTextStyle" parent="Theme.RAF_WALLET">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/purple_500</item>
+    </style>
+
 </resources>
