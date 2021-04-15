@@ -13,7 +13,7 @@ public class SplashActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
 
-        SharedPreferences sharedPreferences =getSharedPreferences(getPackageName(), MODE_PRIVATE);
+        SharedPreferences sharedPreferences =getSharedPreferences("login", MODE_PRIVATE);
         Boolean isLoged = sharedPreferences.getBoolean("isLoged", false);
 
         if(isLoged == true){

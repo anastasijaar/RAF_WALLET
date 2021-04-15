@@ -7,7 +7,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.fragments.FirstFragment;
-import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.fragments.ForthFragment;
+import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.fragments.ProfilFragment;
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.fragments.SecondFragment;
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.fragments.ThirdFragment;
 
@@ -31,7 +31,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
             case FRAGMENT_1: fragment = new FirstFragment(); break;
             case FRAGMENT_2: fragment = new SecondFragment(); break;
             case FRAGMENT_3: fragment = new ThirdFragment(); break;
-            default: fragment = new ForthFragment(); break;
+            default: fragment = new ProfilFragment(); break;
         }
         return fragment;
     }

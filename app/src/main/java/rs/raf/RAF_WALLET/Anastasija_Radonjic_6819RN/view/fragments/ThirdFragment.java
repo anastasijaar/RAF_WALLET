@@ -13,8 +13,5 @@ public class ThirdFragment extends Fragment {
         super(R.layout.fragment_third);
     }
 
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
+
 }

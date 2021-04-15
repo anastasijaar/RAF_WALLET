@@ -1,6 +1,7 @@
 package rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
@@ -8,6 +9,8 @@ import android.os.Bundle;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.R;
+import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.fragments.IzmenaProfilaFragment;
+import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.fragments.ProfilFragment;
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.viewpager.PagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
@@ -54,4 +57,5 @@ public class MainActivity extends AppCompatActivity {
             return true;
         });
     }
+
 }

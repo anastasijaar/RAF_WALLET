@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/IzmenaProfilaActivityText"
+        style="@style/FragmentTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:text="@string/izmena_podataka_o_korisniku"/>
+
+    <ImageButton
+        android:id="@+id/IzmenaProfilaActivityImageButton"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="100dp"
+        android:background="@color/white"
+        app:srcCompat="@drawable/ic_bigmoney"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="225dp"
+        android:tint="@color/black"/>
+
+    <TextView
+        android:id="@+id/IzmenaProfilaActivityName"
+        style="@style/FragmentTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="40dp"
+        android:text="@string/ime"/>
+
+    <EditText
+        android:id="@+id/IzmenaProfilaActivityEditNameInput"
+        style="@style/FragmentTextStyle"
+        android:layout_width="233dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="250dp"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/IzmenaProfilaActivitySurname"
+        style="@style/FragmentTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="40dp"
+        android:text="@string/prezime"/>
+
+    <EditText
+        android:id="@+id/IzmenaProfilaActivityEditSurnameInput"
+        style="@style/FragmentTextStyle"
+        android:layout_width="235dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="350dp"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/IzmenaProfilaActivityBank"
+        style="@style/FragmentTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:layout_marginStart="40dp"
+        android:text="@string/banka"/>
+
+    <EditText
+        android:id="@+id/IzmenaProfilaActivityEditBankInput"
+        style="@style/FragmentTextStyle"
+        android:layout_width="235dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="450dp"
+        android:textSize="24sp"
+        android:layout_marginStart="150dp"/>
+
+    <Button
+        android:id="@+id/IzmenaProfilaActivitySacuvajButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginStart="150dp"
+        android:text="@string/sacuvaj" />
+
+
+</FrameLayout>

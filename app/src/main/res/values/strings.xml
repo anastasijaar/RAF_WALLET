@@ -10,4 +10,10 @@
     <string name="unos">Unos</string>
     <string name="liste">Liste</string>
     <string name="profil">Profil</string>
+    <string name="podaci_o_korisniku">Podaci o korisniku</string>
+    <string name="ime">Ime:</string>
+    <string name="prezime">Prezime:</string>
+    <string name="banka">Banka:</string>
+    <string name="sacuvaj">Sacuvaj</string>
+    <string name="izmena_podataka_o_korisniku">Izmena podataka o korisniku</string>
 </resources>
