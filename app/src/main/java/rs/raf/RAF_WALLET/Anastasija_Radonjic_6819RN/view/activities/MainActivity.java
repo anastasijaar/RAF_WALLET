@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.MainActivitybottomNavigation);
         //disable tint effect of selected item icon
         bottomNavigationView.setItemIconTintList(null);
         init();
@@ -32,13 +32,14 @@ public class MainActivity extends AppCompatActivity {
         initNavigation();
     }
 
+
     private void initViewPager() {
-        viewPager = findViewById(R.id.viewPager);
+        viewPager = findViewById(R.id.MainActivityViewPager);
         viewPager.setAdapter(new PagerAdapter(getSupportFragmentManager()));
     }
 
     private void initNavigation() {
-        ((BottomNavigationView) findViewById(R.id.bottomNavigation)).setOnNavigationItemSelectedListener(item -> {
+        ((BottomNavigationView) findViewById(R.id.MainActivitybottomNavigation)).setOnNavigationItemSelectedListener(item -> {
             switch (item.getItemId()) {
                 // setCurrentItem metoda viewPager samo obavesti koji je Item trenutno aktivan i onda metoda getItem u adapteru setuje odredjeni fragment za tu poziciju
                 case R.id.navigation_1:
@@ -57,5 +58,6 @@ public class MainActivity extends AppCompatActivity {
             return true;
         });
     }
+
 
 }

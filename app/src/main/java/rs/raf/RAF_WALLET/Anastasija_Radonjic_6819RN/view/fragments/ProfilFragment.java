@@ -12,9 +12,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.R;
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.activities.IzmenaProfilaActivity;
+import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.activities.LogInActivity;
+import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.viewmodels.SharedViewModel;
 import timber.log.Timber;
 
 public class ProfilFragment extends Fragment {
@@ -38,7 +41,17 @@ public class ProfilFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        Timber.e("Profil fragment");
         init(view);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        SharedPreferences preferences = this.getActivity().getSharedPreferences(getActivity().getPackageName(), Context.MODE_PRIVATE);
+        nameInputText.setText(preferences.getString("username", ""));
+        surnameInputText.setText(preferences.getString("surname", ""));
+        bankInputText.setText(preferences.getString("bank", ""));
     }
 
     private void init(View view) {
@@ -61,15 +74,19 @@ public class ProfilFragment extends Fragment {
 
     private void initListeners(View view) {
 
-        SharedPreferences preferences = this.getActivity().getSharedPreferences("login", Context.MODE_PRIVATE);
-        nameInputText.setText(preferences.getString("username", ""));
-        surnameInputText.setText(preferences.getString("surname", ""));
-        bankInputText.setText(preferences.getString("bank", ""));
-
         view.findViewById(R.id.ProfilFragmentIzmeniButton).setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), IzmenaProfilaActivity.class);
             startActivity(intent);
+
+        });
+
+        view.findViewById(R.id.ProfilFragmentOdjavaButton).setOnClickListener(v -> {
+            SharedPreferences settings = getContext().getSharedPreferences(getActivity().getPackageName(), Context.MODE_PRIVATE);
+            settings.edit().clear().apply();
+            Intent intent = new Intent(getActivity(), LogInActivity.class);
+            startActivity(intent);
         });
     }
+
 
 }

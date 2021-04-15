@@ -7,16 +7,16 @@
     tools:context=".view.activities.MainActivity">
 
     <rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.viewpager.NonScrollableViewPager
-        android:id="@+id/viewPager"
+        android:id="@+id/MainActivityViewPager"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
+        app:layout_constraintBottom_toTopOf="@id/MainActivitybottomNavigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigation"
+        android:id="@+id/MainActivitybottomNavigation"
         android:layout_width="0dp"
         android:layout_height="56dp"
         android:background="@android:color/white"

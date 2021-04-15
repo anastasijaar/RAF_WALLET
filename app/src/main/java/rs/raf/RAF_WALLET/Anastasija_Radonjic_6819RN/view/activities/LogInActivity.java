@@ -98,7 +98,7 @@ public class LogInActivity extends AppCompatActivity {
                 Toast.makeText(this, "Lozinka mora imati vise od 5 karaktera !", Toast.LENGTH_SHORT).show();
             }
 
-            SharedPreferences sharedPreferences =getSharedPreferences("login", MODE_PRIVATE);
+            SharedPreferences sharedPreferences =getSharedPreferences(getPackageName(), MODE_PRIVATE);
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putString("username", nameInput);
             editor.putString("surname", surnameInput);

@@ -10,8 +10,10 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.R;
+import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.viewmodels.SharedViewModel;
 
 public class IzmenaProfilaFragment extends Fragment {
 
@@ -27,14 +29,9 @@ public class IzmenaProfilaFragment extends Fragment {
 
     private void init(View view) {
         initView(view);
-        initListeners(view);
     }
 
     private void initView(View view) {
 
-
-    }
-
-    private void initListeners(View view) {
     }
 }
