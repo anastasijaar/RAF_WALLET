@@ -1,6 +1,7 @@
 package rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.recycler.adapter;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -84,16 +85,17 @@ public class FinansijaPrihodiAdapter extends ListAdapter<Finansija, FinansijaPri
             });
 
             itemView.findViewById(R.id.trashPictureIv).setOnClickListener(v -> {
-                onItemDelete.apply(getAdapterPosition());
+                if(getAdapterPosition() != RecyclerView.NO_POSITION) {
+                    onItemDelete.apply(getAdapterPosition());
+                }
             });
 
             itemView.findViewById(R.id.editPictureIv).setOnClickListener(v -> {
-                onItemEdit.apply(getAdapterPosition());
+                if(getAdapterPosition() != RecyclerView.NO_POSITION) {
+                    onItemEdit.apply(getAdapterPosition());
+                }
             });
-
-
         }
-
 
     }
 }

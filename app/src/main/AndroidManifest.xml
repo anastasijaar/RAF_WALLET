@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RAF_WALLET">
-        <activity android:name=".view.activities.PregledFinansijeActivity"></activity>
+        <activity android:name=".view.activities.IzmenaPodatakaActivity"></activity>
+        <activity android:name=".view.activities.PregledFinansijeActivity" />
         <activity
             android:name=".view.activities.SplashActivity"
             android:theme="@style/SplashTheme">

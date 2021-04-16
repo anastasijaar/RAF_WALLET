@@ -38,13 +38,12 @@ public class ListeViewModel extends ViewModel {
         finansije.setValue(listToSubmit);
     }
 
-    public void edit(Finansija finansija){
-        //implement edit
+    public void listaPrihoda(Finansija finansija){
+        for (int i = 0; i < finansija.getKolicina(); i++) {
+            finansijeLista.add(finansija);
+        }
+        ArrayList<Finansija> listToSubmit = new ArrayList<>(finansijeLista);
+        finansije.setValue(listToSubmit);
     }
-
-
-
-
-
 
 }

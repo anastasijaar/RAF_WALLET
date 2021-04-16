@@ -25,8 +25,6 @@ public class PregledFinansijeActivity extends AppCompatActivity {
     private TextView opisInputText;
     private Button ureduBtn;
 
-    Finansija finansija;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

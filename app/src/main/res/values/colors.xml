@@ -11,4 +11,10 @@
     <color name="green">#008000</color>
     <color name="gray">#808080</color>
     <color name="white">#FFFFFFFF</color>
+
+    <string-array name="spinnerItems">
+        <item>Prihod</item>
+        <item>Rashod</item>
+    </string-array>
+
 </resources>

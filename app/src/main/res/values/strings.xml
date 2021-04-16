@@ -25,4 +25,12 @@
     <string name="kolicina">Kolicina:</string>
     <string name="opis">Opis:</string>
     <string name="u_redu">U redu</string>
+    <string name="podaci_o_prihodu_rashodu">Podaci o prihodu/rashodu</string>
+    <string name="naslovHint">Naslov</string>
+    <string name="odustani">Odustani</string>
+    <string name="neki_opis">Neki opis</string>
+    <string name="izmeni">Izmeni</string>
+    <string name="unos_novog_prihoda_ili_rashoda">Unos novog prihoda ili rashoda</string>
+    <string name="audio">Audio</string>
+    <string name="dodaj_u_listu">Dodaj u listu</string>
 </resources>

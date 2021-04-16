@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.IzmenaPodatakaActivity">
+
+    <TextView
+        android:id="@+id/IzmenaPodatakaActivityText"
+        style="@style/FragmentTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:text="@string/podaci_o_prihodu_rashodu"/>
+
+    <ImageButton
+        android:id="@+id/IzmenaPodatakaActivityImageButton"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="100dp"
+        android:background="@color/white"
+        app:srcCompat="@drawable/ic_bigmoney"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="225dp"
+        android:tint="@color/black"/>
+
+    <TextView
+        android:id="@+id/IzmenaPodatakaActivityNaslov"
+        style="@style/FragmentTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="40dp"
+        android:text="@string/naslov"/>
+
+    <EditText
+        android:id="@+id/IzmenaPodatakaActivityNaslovInput"
+        style="@style/FragmentTextStyle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="250dp"
+        android:textSize="24sp"
+        android:textColorHint="@color/gray"
+        android:hint="@string/naslovHint"/>
+
+    <TextView
+        android:id="@+id/IzmenaPodatakaActivityKolicina"
+        style="@style/FragmentTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="350dp"
+        android:text="@string/kolicina" />
+
+    <EditText
+        android:id="@+id/IzmenaPodatakaActivityKolicinaInput"
+        style="@style/FragmentTextStyle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="350dp"
+        android:textSize="24sp"
+        android:textColorHint="@color/gray"
+        android:hint="1000"/>
+
+    <TextView
+        android:id="@+id/IzmenaPodatakaActivityOpis"
+        style="@style/FragmentTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="450dp"
+        android:text="@string/opis" />
+
+    <EditText
+        android:id="@+id/IzmenaPodatakaActivityOpisInput"
+        android:layout_marginTop="490dp"
+        android:layout_width="350dp"
+        android:layout_height="130dp"
+        android:inputType="textMultiLine"
+        android:background="@android:drawable/editbox_background"
+        android:paddingStart="10dp"
+        android:layout_marginStart="30dp"
+        android:lines="8"
+        android:maxLines="10"
+        android:minLines="6"
+        android:scrollbars="vertical"
+        android:textColorHint="@color/gray"
+        android:hint="@string/neki_opis"/>
+
+    <Button
+        android:id="@+id/IzmenaPodatakaActivityOdustaniButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginStart="50dp"
+        android:text="@string/odustani" />
+
+    <Button
+        android:id="@+id/IzmenaPodatakaActivityIzmeniButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginStart="250dp"
+        android:text="@string/izmeni" />
+
+</FrameLayout>

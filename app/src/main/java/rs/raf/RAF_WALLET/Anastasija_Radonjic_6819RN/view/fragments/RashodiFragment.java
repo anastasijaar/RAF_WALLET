@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.R;
+import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.activities.IzmenaPodatakaActivity;
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.activities.PregledFinansijeActivity;
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.recycler.adapter.FinansijaRashodiAdapter;
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.recycler.differ.FinansijaDiffItemCallback;
@@ -62,14 +63,18 @@ public class RashodiFragment extends Fragment {
     private void initRecycler(View view) {
         //instanciranje recycler-a
         finansijaRashodiAdapter = new FinansijaRashodiAdapter(new FinansijaDiffItemCallback(), finansija -> {
-            Toast.makeText(getActivity(), finansija.getId()+"", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(getActivity(), PregledFinansijeActivity.class);
+            intent.putExtra("id", finansija.getId());
+            intent.putExtra("naslov",finansija.getNaslov());
+            intent.putExtra("kolicina", finansija.getKolicina());
+            startActivity(intent);
             return null;
         }, finansijaToDeleted ->{
             listeViewModel.delete(finansijaToDeleted);
             return null;
         }, finansijaToEdit ->{
-            listeViewModel.edit(finansijaToEdit);
-            Intent intent = new Intent(getActivity(), PregledFinansijeActivity.class);
+            Intent intent = new Intent(getActivity(), IzmenaPodatakaActivity.class);
+            startActivity(intent);
             return  null;
         });
         recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));

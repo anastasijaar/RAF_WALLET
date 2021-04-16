@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.R;
+import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.activities.IzmenaPodatakaActivity;
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.activities.PregledFinansijeActivity;
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.recycler.adapter.FinansijaPrihodiAdapter;
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.recycler.differ.FinansijaDiffItemCallback;
@@ -71,7 +72,8 @@ public class PrihodiFragment extends Fragment {
             listeViewModel.delete(finansijaToDeleted);
             return null;
         }, finansijaToEdit ->{
-            listeViewModel.edit(finansijaToEdit);
+            Intent intent = new Intent(getActivity(), IzmenaPodatakaActivity.class);
+            startActivity(intent);
             return  null;
         });
         recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
