@@ -11,11 +11,13 @@ public class Finansija {
     private String picture;
     private String naslov;
     private int kolicina;
+    private String vrsta;
 
-    public Finansija(int id, String naslov, int kolicina) {
+    public Finansija(int id, String naslov, int kolicina, String vrsta) {
         this.id = id;
         this.naslov = naslov;
         this.kolicina = kolicina;
+        this.vrsta = vrsta;
     }
 
     public int getId() {
@@ -50,4 +52,11 @@ public class Finansija {
         this.kolicina = kolicina;
     }
 
+    public String getVrsta() {
+        return vrsta;
+    }
+
+    public void setVrsta(String vrsta) {
+        this.vrsta = vrsta;
+    }
 }

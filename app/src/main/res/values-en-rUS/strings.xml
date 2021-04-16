@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">RAF_WALLET</string>
+    <string name="novcanik_sistem_za_studente_raf_a">Wallet system for RAF students</string>
+    <string name="unesite_ime">Enter a name</string>
+    <string name="unesite_prezime">Enter last name</string>
+    <string name="unesite_ime_banke">Enter the bank name</string>
+    <string name="unesite_sifru">Enter the password</string>
+    <string name="prijava">Log in</string>
+    <string name="unos">Entry</string>
+    <string name="liste">List</string>
+    <string name="profil">Profile</string>
+    <string name="podaci_o_korisniku">User information</string>
+    <string name="ime">Name:</string>
+    <string name="prezime">Surname:</string>
+    <string name="banka">The bank:</string>
+    <string name="sacuvaj">Save</string>
+    <string name="izmena_podataka_o_korisniku">Editing user data</string>
+    <string name="pregled_ukupnog_stanja_racuna">Overview of the total account balance</string>
+    <string name="prihod">Income:</string>
+    <string name="rashod">Expenditure:</string>
+    <string name="razlika">The difference:</string>
+    <string name="pregled_prihoda_rashoda">Income / expenditure overview</string>
+    <string name="naslov">Title:</string>
+    <string name="kolicina">Quantity:</string>
+    <string name="opis">Description:</string>
+    <string name="u_redu">OK</string>
+    <string name="podaci_o_prihodu_rashodu">Income / expenditure data</string>
+    <string name="naslovHint">Title</string>
+    <string name="odustani">Give up</string>
+    <string name="neki_opis">Some description</string>
+    <string name="izmeni">Edit</string>
+    <string name="unos_novog_prihoda_ili_rashoda">Enter new income or expense</string>
+    <string name="dodaj_u_listu">Add to list</string>
+    <string name="stanje">Balance</string>
+    <string name="opis_unosa">Description</string>
+    <string name="kolicina_unosa">Quantity</string>
+    <string name="odjava">Sign out</string>
+    <string name="izmeni_profil">Edit</string>
+</resources>

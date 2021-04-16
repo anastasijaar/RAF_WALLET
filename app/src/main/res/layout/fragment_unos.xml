@@ -45,7 +45,7 @@
         android:layout_marginTop="320dp"
         android:textSize="24sp"
         android:textColorHint="@color/gray"
-        android:hint="Kolicina"/>
+        android:hint="@string/kolicina_unosa"/>
 
     <CheckBox
         android:id="@+id/UnosFragmentCheckBox"
@@ -71,7 +71,7 @@
         android:minLines="6"
         android:scrollbars="vertical"
         android:textColorHint="@color/gray"
-        android:hint="Opis"/>
+        android:hint="@string/opis_unosa"/>
 
     <Button
         android:id="@+id/UnosFragmentDodajUListuButton"

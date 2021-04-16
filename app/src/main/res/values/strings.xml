@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RAF_WALLET</string>
+    <string name="app_name" translatable="false">RAF_WALLET</string>
     <string name="novcanik_sistem_za_studente_raf_a">Novcanik sistem za studente RAF-a</string>
     <string name="unesite_ime">Unesite ime</string>
     <string name="unesite_prezime">Unesite prezime</string>
@@ -31,6 +31,15 @@
     <string name="neki_opis">Neki opis</string>
     <string name="izmeni">Izmeni</string>
     <string name="unos_novog_prihoda_ili_rashoda">Unos novog prihoda ili rashoda</string>
-    <string name="audio">Audio</string>
+    <string name="audio" translatable="false">Audio</string>
     <string name="dodaj_u_listu">Dodaj u listu</string>
+    <string name="opis_unosa">Opis</string>
+    <string name="kolicina_unosa">Kolicina</string>
+    <string name="odjava">Odjava</string>
+    <string name="izmeni_profil">Izmeni</string>
+
+    <string-array name="spinnerItems">
+        <item>Prihod</item>
+        <item>Rashod</item>
+    </string-array>
 </resources>

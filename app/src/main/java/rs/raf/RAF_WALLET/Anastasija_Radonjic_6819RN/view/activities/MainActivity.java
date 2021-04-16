@@ -2,6 +2,7 @@ package rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
@@ -12,15 +13,18 @@ import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.R;
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.fragments.IzmenaProfilaFragment;
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.fragments.ProfilFragment;
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.viewpager.PagerAdapter;
+import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.viewmodels.ListeViewModel;
 
 public class MainActivity extends AppCompatActivity {
 
     private ViewPager viewPager;
+    private ListeViewModel listeViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        listeViewModel = new ViewModelProvider(this).get(ListeViewModel.class);
         BottomNavigationView bottomNavigationView = findViewById(R.id.MainActivitybottomNavigation);
         //disable tint effect of selected item icon
         bottomNavigationView.setItemIconTintList(null);
@@ -30,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private void init() {
         initViewPager();
         initNavigation();
+
     }
 
 
@@ -59,5 +64,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
+    public ListeViewModel getListeViewModel() {
+        return listeViewModel;
+    }
 }

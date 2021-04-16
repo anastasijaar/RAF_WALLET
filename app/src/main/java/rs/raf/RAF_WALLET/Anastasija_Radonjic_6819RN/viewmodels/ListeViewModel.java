@@ -18,7 +18,12 @@ public class ListeViewModel extends ViewModel {
 
     public ListeViewModel() {
         for(int i=0; i<=4; i++) {
-            Finansija finansija = new Finansija(i, "Naslov" + i, 1 + i);
+            Finansija finansija = new Finansija(i, "Naslov" + i, 1 , "Prihod");
+            finansijeLista.add(finansija);
+        }
+
+        for(int i=0; i<=4; i++) {
+            Finansija finansija = new Finansija(i, "Naslov" + i, 2 , "Rashod");
             finansijeLista.add(finansija);
         }
         // ovo radimo zato sto finansije.setValue u pozadini prvo proverava da li je pokazivac na objekat isti i ako jeste nece uraditi notifyAll
@@ -44,6 +49,27 @@ public class ListeViewModel extends ViewModel {
         }
         ArrayList<Finansija> listToSubmit = new ArrayList<>(finansijeLista);
         finansije.setValue(listToSubmit);
+    }
+
+    public int getPrihodi(){
+        int prihodi = 0;
+        for (int i = 0; i < finansijeLista.size(); i++) {
+            if(finansijeLista.get(i).getVrsta().equals("Prihod")){
+                prihodi += finansijeLista.get(i).getKolicina();
+            }
+
+        }
+        return prihodi;
+    }
+
+    public int getRashodi(){
+        int rashodi = 0;
+        for (int i = 0; i < finansijeLista.size(); i++) {
+            if(finansijeLista.get(i).getVrsta().equals("Rashod")){
+                rashodi += finansijeLista.get(i).getKolicina();
+            }
+        }
+        return rashodi;
     }
 
 }
