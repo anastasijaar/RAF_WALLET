@@ -6,12 +6,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.fragments.FirstFragment;
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.fragments.PrihodiFragment;
-import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.fragments.ProfilFragment;
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.fragments.RashodiFragment;
-import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.fragments.SecondFragment;
-import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.fragments.ThirdFragment;
 
 public class FinansijeAdapter extends FragmentPagerAdapter {
 

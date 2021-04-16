@@ -8,9 +8,9 @@ import androidx.fragment.app.Fragment;
 
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.R;
 
-public class FirstFragment extends Fragment {
+public class StanjeFragment extends Fragment {
 
-    public FirstFragment() {
+    public StanjeFragment() {
         super(R.layout.fragment_first);
     }
 

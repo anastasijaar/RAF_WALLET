@@ -10,6 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RAF_WALLET">
+        <activity android:name=".view.activities.PregledFinansijeActivity"></activity>
         <activity
             android:name=".view.activities.SplashActivity"
             android:theme="@style/SplashTheme">
@@ -20,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.activities.LogInActivity" />
-        <activity android:name=".view.activities.IzmenaProfilaActivity"/>
+        <activity android:name=".view.activities.IzmenaProfilaActivity" />
         <activity android:name=".view.activities.MainActivity" />
     </application>
 

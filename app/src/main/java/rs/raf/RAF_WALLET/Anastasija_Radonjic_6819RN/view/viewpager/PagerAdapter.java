@@ -6,10 +6,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.fragments.FirstFragment;
+import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.fragments.StanjeFragment;
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.fragments.ProfilFragment;
 import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.fragments.SecondFragment;
-import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.fragments.ThirdFragment;
+import rs.raf.RAF_WALLET.Anastasija_Radonjic_6819RN.view.fragments.ListeFragment;
 
 public class PagerAdapter extends FragmentPagerAdapter {
 
@@ -28,9 +28,9 @@ public class PagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         Fragment fragment;
         switch (position) {
-            case FRAGMENT_1: fragment = new FirstFragment(); break;
+            case FRAGMENT_1: fragment = new StanjeFragment(); break;
             case FRAGMENT_2: fragment = new SecondFragment(); break;
-            case FRAGMENT_3: fragment = new ThirdFragment(); break;
+            case FRAGMENT_3: fragment = new ListeFragment(); break;
             default: fragment = new ProfilFragment(); break;
         }
         return fragment;
