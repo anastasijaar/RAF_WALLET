@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.PregledFinansijeActivity">
+
+    <TextView
+        android:id="@+id/PregledFinansijeActivityText"
+        style="@style/FragmentTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:text="@string/pregled_prihoda_rashoda"/>
+
+    <ImageButton
+        android:id="@+id/PregledFinansijeActivityImageButton"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="100dp"
+        android:background="@color/white"
+        app:srcCompat="@drawable/ic_bigmoney"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="225dp"
+        android:tint="@color/black"/>
+
+    <TextView
+        android:id="@+id/PregledFinansijeActivityNaslov"
+        style="@style/FragmentTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:layout_marginStart="40dp"
+        android:text="@string/naslov"/>
+
+    <TextView
+        android:id="@+id/PregledFinansijeActivityNaslovInput"
+        style="@style/FragmentTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="250dp"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/PregledFinansijeActivityKolicina"
+        style="@style/FragmentTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="350dp"
+        android:text="@string/kolicina" />
+
+    <TextView
+        android:id="@+id/PregledFinansijeActivityKolicinaInput"
+        style="@style/FragmentTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="350dp"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/PregledFinansijeActivityOpis"
+        style="@style/FragmentTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="450dp"
+        android:text="@string/opis" />
+
+    <TextView
+        android:id="@+id/PregledFinansijeActivityOpisInput"
+        android:layout_marginTop="490dp"
+        android:layout_width="350dp"
+        android:layout_height="130dp"
+        android:inputType="textMultiLine"
+        android:layout_marginStart="30dp"
+        android:lines="8"
+        android:maxLines="10"
+        android:minLines="6"
+        android:scrollbars="vertical"/>
+
+    <Button
+        android:id="@+id/PregledFinansijeActivityButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginStart="150dp"
+        android:text="@string/u_redu" />
+
+</FrameLayout>

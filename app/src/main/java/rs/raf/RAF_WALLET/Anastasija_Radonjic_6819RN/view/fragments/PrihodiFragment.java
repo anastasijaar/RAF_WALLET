@@ -62,6 +62,10 @@ public class PrihodiFragment extends Fragment {
         //instanciranje recycler-a
         finansijaAdapter = new FinansijaPrihodiAdapter(new FinansijaDiffItemCallback(), finansija -> {
             Intent intent = new Intent(getActivity(), PregledFinansijeActivity.class);
+            intent.putExtra("id", finansija.getId());
+            intent.putExtra("naslov",finansija.getNaslov());
+            intent.putExtra("kolicina", finansija.getKolicina());
+            startActivity(intent);
             return null;
         }, finansijaToDeleted ->{
             listeViewModel.delete(finansijaToDeleted);

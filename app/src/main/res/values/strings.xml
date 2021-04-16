@@ -20,4 +20,9 @@
     <string name="prihod">Prihod:</string>
     <string name="rashod">Rashod:</string>
     <string name="razlika">Razlika:</string>
+    <string name="pregled_prihoda_rashoda">Pregled prihoda/rashoda</string>
+    <string name="naslov">Naslov:</string>
+    <string name="kolicina">Kolicina:</string>
+    <string name="opis">Opis:</string>
+    <string name="u_redu">U redu</string>
 </resources>
